@@ -2,7 +2,7 @@
 
 <div class="welcome-wrapper">
         
-        <div class="img-right float-right w-3/6">
+        <div class="img-right float-right w-3/6 h-full">
             <img src="../assets/BahanImage/bahan2.jpeg" alt="">
         </div>
 
@@ -45,5 +45,8 @@
 }
 .greeting h1{
     font-size: 30px;
+}
+.img-right img{
+    height: 100%;
 }
 </style>

@@ -27,16 +27,16 @@
             <p class="text-white"> Weight : {{ PokemonSelected.weight }}</p>
 
               <img :src="PokemonSelected.sprites.front_default" class="w-full h-30">
-          <div class="statistic bg-red-600 flex flex-col flex-wrap p-5 gap-5 text-align">
+          <div class="statistic bg-white text-yellow-600 flex flex-col flex-wrap p-5 gap-5 text-align rounded">
 
             <div class="tipe flex flex-row gap-3">
-                Tipe : <p class="text-white text-center" v-for =" i in PokemonSelected.types"> {{ i.type.name }} || </p> 
+                Tipe : <p class="text-yellow-600 text-center" v-for =" i in PokemonSelected.types"> {{ i.type.name }} || </p> 
              </div>
                 <div class="stats flex flex-row gap-3">
-                Stats : <p class="text-white text-center" v-for =" s in PokemonSelected.stats"> {{ s.stat.name }} || </p> 
+                Stats : <p class="text-yellow-600 text-center" v-for =" s in PokemonSelected.stats"> {{ s.stat.name }} || </p> 
               </div>  
               <div class="stats flex flex-row gap-3">
-                Generation : <p class="text-white text-center" v-for =" m in PokemonSelected.sprites.versions"> {{ m.generation }} || </p> 
+                Generation : <p class="text-yellow-600 text-center" v-for =" m in PokemonSelected.sprites.versions"> {{ m.generation }} || </p> 
               </div> 
 
           </div>
@@ -68,7 +68,7 @@ export default {
   },
   methods: {
     async getListPokemon() {
-        let response = await fetch("https://pokeapi.co/api/v2/pokemon?LIMIT=151");
+        let response = await fetch("https://pokeapi.co/api/v2/pokemon");
         let data = await response.json();
         let results = data.results
 
