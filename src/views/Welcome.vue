@@ -1,17 +1,47 @@
 <template>
-    <div class="greeting bg-opacity-30 bg-white">
-    <h1 class="text-center text-red-600 justify-center h-full w-full">Hello, Welcome Broh.., In Pokemon Website</h1>
+
+<div class="welcome-wrapper">
+        
+        <div class="img-right float-right w-3/6">
+            <img src="../assets/BahanImage/bahan2.jpeg" alt="">
+        </div>
+
+    <div class="greeting ">
+        <h1>Hello, Welcome to Pokemon Website,
+            Find your favorite poke
+        </h1>
+
     </div>
+
+</div>
 </template>
 
-<style>
+<style scoped>
+
 .greeting{
     position: absolute; 
-    left: 40%;
-    top: 50%;
-    /* background-color: white; */
+    left: 20%;
+    top: 30%;
     padding: 10px;
     border-radius: 5px;
+    width: 250px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    float: left;
+}
+
+.button-direct{
+    position: absolute; 
+    left: 35%;
+    top: 40%;
+    font-size: 20px;
+    float: right;
+}
+
+.button-direct:hover{
+    background-color: dimgrey;
+    color: grey;
 }
 .greeting h1{
     font-size: 30px;
