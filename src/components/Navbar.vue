@@ -9,7 +9,7 @@
         <ul class="flex flex-col" >
             <li><RouterLink to="/" name="Home" title="Home"> Home</RouterLink></li>
             <li><RouterLink to="/dashboard" name="Dashboard" title="Dashboard"> Dashboard</RouterLink></li>
-            <li><RouterLink to="/news" name="News" title="News"> News</RouterLink></li>
+            <li><RouterLink to="/news" name="News" title="News"> Gallery </RouterLink></li>
             <li><RouterLink to="/favorite" name="Favorite" title=" Favorite"> Favorite</RouterLink></li>
             <li><RouterLink to="/about" name="About" title=" About">About</RouterLink></li>
         </ul>

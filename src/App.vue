@@ -3,20 +3,14 @@
 <div class="navbar-wrapper">
     <Navbar />
 </div>
-<div class="top-side">
-    <TopSide />
-</div>
-
     <RouterView />
 </template>
 
 <script>
     import Navbar from './components/Navbar.vue'
-    import TopSide from './components/topside.vue'
-    // import Dashboard from './views/Dashboard.vue';
 export default {
         components: {
-        Navbar,TopSide
+        Navbar
     },
 }
 
